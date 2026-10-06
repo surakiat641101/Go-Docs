@@ -1,0 +1,13 @@
+services:
+  gogeneratedocs:
+    build: .
+    image: godocs:latest
+    container_name: godocs
+    env_file: .env
+    ports:
+      - "${HOST_PORT:-3000}:${PORT:-3000}"
+    restart: unless-stopped
+    # The service writes nothing to disk, so run it locked down.
+    read_only: true
+    security_opt:
+      - no-new-privileges:true

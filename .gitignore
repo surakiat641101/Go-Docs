@@ -1,0 +1,7 @@
+# Local configuration (may hold secrets) — commit .env.example instead
+.env
+
+# Build output
+/gogeneratedocs
+*.exe
+*.docx
