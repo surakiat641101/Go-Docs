@@ -7,7 +7,7 @@ import (
 
 	"gogeneratedocs/config"
 	"gogeneratedocs/controller"
-	"gogeneratedocs/internal/router"
+	"gogeneratedocs/router"
 	"gogeneratedocs/service"
 )
 
